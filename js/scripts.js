@@ -60,6 +60,7 @@ function updateTimer(){
 
 
 }
+
 function endCounter(timeDifference){
 	if (timeDifference < 1){
 		document.getElementById("hidden").style.display="none";
