@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="twitterApp">
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script type="text/javascript" src="js/twitterController.js"></script>
 
 </head>
-<body>
+<body ng-controller="twitterController">
 	
 
 	<!--<h1>Countdown to <br>BATTLE AT BRISTOL</h1>
@@ -44,10 +46,12 @@
 			<div class="time-text">Seconds</div>
 		</div>
 
-		<!--<div class="bms">
-			<img src="css/bms.jpg">
-
-		</div>-->
+		<div class="row">
+			<div id="game-tweets" class="col-sm-12 text-center">Tweets about the game!!</div>
+			<div id="tweets" class="col-sm-12" ng-repeat="tweet in data"ng-style="{'background-image': 'url(' + tweet.user.profile_banner_url + ')'}" style="height: 250px;">{{tweet.text}} -- {{tweet.user.name}} -- {{tweet.sinceTweeted}} in seconds
+				<!-- <img ng-src="{{tweet.user.profile_banner_url}}" /> -->
+			</div>
+		</div>
 	</div>
 
 	<div id="hidden">

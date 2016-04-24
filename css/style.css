@@ -67,3 +67,8 @@ h2{
 .header-logo img{
 	max-width: 100%;
 }
+
+#game-tweets{
+	color: #FC4600;
+	font-size: 40px
+}
