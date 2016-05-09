@@ -2,7 +2,7 @@ var twitterApp = angular.module('twitterApp', []);
 
 twitterApp.controller('twitterController', function($scope, $http, $interval, $location){
 
-	var url = 'http://digitalcrafts.com/students/twitter/hashtag.php?hash=battleofbristol';
+	var url = 'http://digitalcrafts.com/students/twitter/hashtag.php?hash=vols&secondHash=hokies';
 
 	$http.get(url).success(function(data){
 		$scope.data=data.statuses;
