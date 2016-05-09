@@ -4,4 +4,4 @@ Angular used to bind data into view integrating tweets from twitter.
 
 ##Demo Here
 
-...Insert link when it exists...
+####[Countdown](http://www.jeremyhilliard.com/projects/countdown/index.html#/ "Countdown")
